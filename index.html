@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <h2 class="logo">ToDo List <span style="color:white">!</span></h2>
+        <p class="btn">
+            <i class="fa-solid fa-plus" style="color:white;font-size:28px;margin-top:-15px;"></i>
+            <span style="color:white;display:inline-block;margin-top:-12px; font-family: 'DynaPuff', cursive;padding:0 1px">add item</span>
+        </p>
+    </div>
+    
+    <div class="main-popup hide">
+        <div class="dialog-box">
+            <h2>add your task</h2>
+            <i class="fa-solid fa-xmark cross"></i>
+            <div class="input-field">
+                <input type="text" placeholder="enter your task">
+                <button class="submit">submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="grand-father">
+        <div class="father"></div>
+        <div class="second-popup hide" style="background-color:rgba(128, 128, 128, 0.805)">
+            <div class="dialog-box">
+                <h2>enter your sub-task</h2>
+                <i class="fa-solid fa-xmark cross" style="color:black"></i>
+                <div class="input-field">
+                    <input type="text" placeholder="enter your task">
+                    <button class="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
